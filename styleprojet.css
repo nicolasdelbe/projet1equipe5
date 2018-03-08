@@ -1,0 +1,27 @@
+body
+{
+  background: orange;
+}
+
+p
+{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.row
+{
+  margin-bottom: 20px;
+}
+
+.giphy-embed
+{
+  padding-left: 100px;
+}
+
+.container-fluid
+{
+  width: 960px;
+  margin-left: 50px;;
+  margin-right: 0;
+}
