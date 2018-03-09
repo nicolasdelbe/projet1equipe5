@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title></title>
 	<title>La wild code school</title>
 	<meta charset="utf-8">
 	
@@ -9,135 +10,74 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
-
-	<style>
-	@import url('https://fonts.googleapis.com/css?family=Roboto');
-	@import url('https://fonts.googleapis.com/css?family=Saira+Condensed');
-	@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-	</style>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> 
+	  
 </head>
-<body>
 
-	<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.12';
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-	
+
+<body>
 	<!--------------------------------------->
 	<!------------------header--------------->
 	<!--------------------------------------->
 
 
-	<header>
-		<div class="container-fluid">
-			<div class="row">
+	
+		
 
 									<!--------------------------------------->
 									<!------------------Navbar--------------->
 									<!--------------------------------------->
+	<header>
+ 	 <!-- Navbar -->
+  		<nav class="navbar navbar-default sticky-top navbar">
+    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		     <a class="navbar-brand" href="#"><span class="brand">Wild Code School</span></a>
+		        
+		      </a>
+		    </div>
 
-				<div class="col-xs-12">
-					<nav class="navbar navbar-inverse">
-						
-			  			<div class="container-fluid">
-				   			<div class="navbar-header">
-				   				<a class="navbar-brand" href="#"><span class="brand">Wild Code School</span></a>
-				    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							        <span class="sr-only">Toggle navigation</span>
-							        <span class="icon-bar"></span>
-							        <span class="icon-bar"></span>
-							        <span class="icon-bar"></span>
-      							</button>
-					    	
-				    		</div>
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	     						<ul class="nav navbar-nav">
-								    <li><a href="#"><span class="list"><i class="fas fa-home"></i>Home</span></a></li>
-								    <li><a href="#"><span class="list"><i class="fas fa-smile"></i>Les joies de la wild</span></a></li>
-								    <li><a href="#"><span class="list"><i class="fas fa-book"></i>livre d'or</span></a></li>
-								    <li><a href="#"><span class="list2"></i>C'est la WILD que je prefere</span></a></li>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      	<ul class="nav navbar-nav">
+		      
+			        <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+			        <li><a href="#"><i class="fas fa-smile"></i>Les joies de la wild</a></li>
+			        <li><a href="formpage.html"><i class="fas fa-book"></i>Livre d'or</a></li>
+			        <li><a href="#"><span class="list2"></i>C'est la WILD que je prefere</span></a></li>
+			        <li><button type="button" class="btn btn-outline-danger">Beta</button></li>
+		      	</ul>
+		    </div>
+  </nav>
+</header>
+  <!-- End Navbar -->
 
-
-						   		</ul>
-							</div>
-								
-	 
-							</div>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
-					
 
 
 									<!--------------------------------------->
-									<!------------------Carousel------------->
+									<!------------------image-h-------------->
 									<!--------------------------------------->
-				<div class="row">
-					<div class="col-xs-12">
-					<div class="carousel1">
-						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<section class="section">
 
-							<ol class="carousel-indicators">
-		    					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		   						<li data-target="#myCarousel" data-slide-to="1"></li>
-		    					<li data-target="#myCarousel" data-slide-to="2"></li>
-		  					</ol>
-		 
-
-		  					<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-			    				<div class="item active">
-			       					<img class="img" src="banniere.png" alt="banniere1">
-			      					<div class="carousel-caption">
-								        
-							        </div>
-			   					 </div>
-
-			    				<div class="item">
-			      					<img class="img" src="banniere.png" " alt="banniere2">
-			    				</div>
-
-			   					<div class="item">
-			     					<img class="img" src="banniere.png" alt="banniere3">
-			      					<div class="carousel-caption">
-								        
-			    					</div>
-								</div>
-
-		  						<!-- Left and right controls -->
-		  						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-		   							 <span class="glyphicon glyphicon-chevron-left"></span>
-		    						<span class="sr-only">Previous</span>
-		  						</a>
-		  						<a class="right carousel-control" href="#myCarousel" data-slide="next">
-		    						<span class="glyphicon glyphicon-chevron-right"></span>
-		    						<span class="sr-only">Next</span>
-		  						</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		
-
-	
-			<!--------------------------------------->
-			<!------------------section-------------->
-			<!--------------------------------------->
+		<img src="img/eurateck.JPG" class="img-responsive" alt="">
+		</section>
+									<!--------------------------------------->
+									<!------------------section-------------->
+									<!--------------------------------------->
 
 	<section class="section2">
 		<div class="container-fluid">
@@ -154,9 +94,7 @@
 
 			</div>
 		</div>
-		
-	</section>
-			<!--------------------------------------->
+	<!--------------------------------------->
 			<!------------------section 2------------>
 			<!--------------------------------------->
 			<section class="section3">
@@ -182,7 +120,7 @@
 									<li>Avoir des notions de code est un plus mais non obligatoire</li>
 									<li>Avoir la patate</li>
 									<li>Avoir de belles chaussettes ou de beaux chaussons </li>
-									<img src="chaussons-kawai.jpg" class="imgfoot" width="100%" height="200px" alt="">
+									<img src="img/chaussons-kawai.jpg" class="imgfoot" width="100%" height="200px" alt="">
 
 
 								</ul>
@@ -196,6 +134,9 @@
 
 		</section>
 
+		<section class="section4">
+		 		</section>
+
 			
 
 
@@ -205,27 +146,33 @@
 			<!--------------------------------------->
 
 	<footer>
-		<div class="container">
+		<div class="container-fluid">
+			<h2>Nos reseaux sociaux</h2>
+
+
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="reseausociaux">
 						<ul>
-							<li><a href=""><img src="logowcs.png" alt="" class="logowcs" width="40" height="40"></a></li>
-							<li><a href=""><i class="fab fa-facebook-square fa-3x"></i></a></li>
-							<li><a href=""><i class="fab fa-twitter fa-3x"></i></a></li>
-							<li><a href=""><i class="fab fa-youtube fa-3x"></i></a></li>
-							<li><a href=""><i class="fab fa-linkedin fa-3x"></i></a></li>
-							<li><a href=""><i class="fab fa-instagram fa-3x"></i></a></li>
+							<li><a href="https://wildcodeschool.fr/"><img src="img/logowcs.png" alt="" class="logowcs" width="40" height="40"></a></li>
+							<li><a href="https://www.facebook.com/wildcodeschool"><i class="fab fa-facebook-square fa-3x"></i></a></li>
+							<li><a href="https://twitter.com/wildcodeschool"><i class="fab fa-twitter fa-3x"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw"><i class="fab fa-youtube fa-3x"></i></a></li>
+							<li><a href="https://www.linkedin.com/school/10387519?pathWildcard=10387519"><i class="fab fa-linkedin fa-3x"></i></a></li>
+							<li><a href="https://www.instagram.com/wildcodeschool/"><i class="fab fa-instagram fa-3x"></i></a></li>
+
 						</ul>
 					</div>
 				</div>
 			</div>
+			<div class="row">
+
+				<p><i class="fas fa-copyright"></i> Salemine , Nicolas , Raphael , Stephane , Alexandre </p> 
+
+			</div>
 		</div>
-
-	
-
-	</footer>
-
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</footer>
 </body>
+
+
 </html>

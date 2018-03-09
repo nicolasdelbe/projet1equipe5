@@ -1,7 +1,5 @@
-!--------------------------------!
-!-------------HEADER-------------!
-!--------------------------------!
 
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
 .row {
   margin-right: 0;
@@ -47,8 +45,9 @@ i {
 	font-size: 30px;
 	text-shadow: 1px 1px 1px black;
 	font-family: 'Indie Flower', cursive;
-	margin-left: 290px;
-	margin-top :10px;
+	font-size: 30px;
+
+
 }
 
 .list:hover {
@@ -72,13 +71,13 @@ i {
 	min-height: 200px;
 	z-index: 1;
 
-}
+ .section{
+ 	height: 96vh;
+	overflow: hidden;
+	background-color:rgb(81, 81, 81);
+	max-height: 1000px;
+  }
 
-.carousel-inner{
-	min-height: 200px;
-}
-.img1{height: 200px;
-}
 
 .item .active{min-height: 200px;}
 .carousel-indicators li{
@@ -90,10 +89,25 @@ i {
 	background: black;
 	border:solid 1px black;
 
-}
 
 
-.section2{
+  .header{
+  	color:#f8a348;
+  	font-size: 100px;
+  	font-family: 'Lato', sans-serif;
+  	width: 700px;
+  	margin: auto;
+  	margin-top:10;
+
+  }
+
+  .header:hover{
+  	transition:all 1s ease;
+  	color:white;
+
+  }
+
+ .section2{
 	background-color: #f8a348;
 	height: auto;
 
@@ -108,22 +122,7 @@ video{
 	border: 50px solid #efefef;
 	border-radius: 50px;
 }
-.page{width: 100%;}
 
-footer {
-	background-color:black;
-	padding-top: 20px;
-
-}
-
-
-footer li{
-
-	color:#f8a348;
-	display: inline-block;
-
-
-}
 
 .section3{
 	background-color: #EFEFEF;
@@ -136,7 +135,7 @@ footer li{
 	border: solid 10px #f8a348;
 	margin-bottom: 50px;
 	border-radius: 20%;
-	overflow: hidden;
+
 	height: 100%
 	padding:30px;
 
@@ -161,6 +160,48 @@ footer li{
 
 }
 
+.cadre h2{margin-left: 40px;}
+.cadre li{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+}
+.cadre p{
+	margin-left: 50px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+.imgfoot{
+	border-radius: 100%;
+	border:solid 5px #f8a348;
+	position: relative;
+	left: -20px
+}
+
+.imgfoot:hover{
+	transition: 1s all ease;
+
+	transform: scale(1.5) rotateY(360deg);
+}
+
+footer p{
+	color:#f8a348;
+	margin-bottom: 20px;
+}
+
+footer {
+	text-align: center;}
+footer h2{
+	color:#f8a348;
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'Indie Flower', cursive;
+
+}
+
+footer ul{
+	margin-left: -30px;
+
+}
 
 .logowcs{margin-top: -25px;}
 
@@ -181,26 +222,11 @@ footer li{
 	width:30%;
 	margin:auto;
 }
-.cadre h2{margin-left: 40px;}
-.cadre li{
-	font-family: 'Roboto', sans-serif;
-	font-size: 15px;
-}
-.cadre p{
-	margin-left: 50px;
-	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
-}
-.imgfoot{
-	border-radius: 100%;
-	border:solid 5px #f8a348;
-	position: relative;
-	left: -20px
-}
 
-.imgfoot:hover{
-	transition: 1s all ease;
-	transform: rotateY(360deg);
+footer {
+	background-color:black;
+	padding-top: 20px;
+
 }
 
 h1 {
