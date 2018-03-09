@@ -1,0 +1,8 @@
+@media screen and (max-width: 800px) {
+  input[name="nom"] {
+    margin-left: 0px;
+  }
+  textarea {
+    width: 300px;
+  }
+}
