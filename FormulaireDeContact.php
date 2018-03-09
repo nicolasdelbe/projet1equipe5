@@ -1,34 +1,19 @@
-
-<html>
-  <head>
-    <title>Formulaire de contact</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-    <link rel="stylesheet" type="style.css" href="style.css" />
-    <link rel="stylesheet" media="screen and (max-width: 800px)" href="smallscreen.css"  />
-  </head>
-  <body>
-
-    <form class="WILD">
-    <h1>Envoie nous un petit mot doux !</h1>
-
-    <?php
+<?php
 // S'il y des données de postées
-if ($_SERVER['REQUEST_METHOD']=='POST') {
-
-  // (1) Code PHP pour traiter l'envoi de l'email
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   // Récupération des variables et sécurisation des données
-  $nom     = htmlentities($_POST['nom']); // htmlentities() convertit des caractères "spéciaux" en équivalent HTML
-  $email   = htmlentities($_POST['email']);
-  $message = htmlentities($_POST['message']);
+  $name    = $_POST['name'];
+  $email   = $_POST['email'];
+  $message = $_POST['message'];
 
   // Variables concernant l'email
 
   $destinataire = 'salemine.hirti@gmail.com'; // Adresse email du webmaster (à personnaliser)
-  $sujet = 'Titre du message'; // Titre de l'email
+  $sujet = 'Contact site'; // Titre de l'email
   $contenu = '<html><head><title>Titre du message</title></head><body>';
   $contenu .= '<p>Bonjour, vous avez reçu un message à partir de votre site web.</p>';
-  $contenu .= '<p><strong>Nom</strong>: '.$nom.'</p>';
+  $contenu .= '<p><strong>Nom</strong>: '.$name.'</p>';
   $contenu .= '<p><strong>Email</strong>: '.$email.'</p>';
   $contenu .= '<p><strong>Message</strong>: '.$message.'</p>';
   $contenu .= '</body></html>'; // Contenu du message de l'email (en XHTML)
@@ -40,18 +25,34 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
   // Envoyer l'email
   mail($destinataire, $sujet, $contenu, $headers); // Fonction principale qui envoi l'email
   echo '<h2>Message envoyé!</h2>'; // Afficher un message pour indiquer que le message a été envoyé
-  // (2) Fin du code pour traiter l'envoi de l'email
 }
 ?>
 
-    <form method="post" action="<?php echo strip_tags($_SERVER['REQUEST_URI']); ?>">
-      <p>Ton nom: <input type="text" name="nom" size="30" /></p>
-      <p>Ton email <span style="color:#f8a348;">*</span>: <input type="text2" name="email" size="30" /></p>
-      <p>Ton message <span style="color:#f8a348;">*</span>:</p>
-      <textarea name="message" cols="60" rows="10"></textarea>
-      <!-- Ici pourra être ajouté un captcha anti-spam (plus tard) -->
-      <p><input type="submit" name="submit" value="Envoyer" /></p>
-    </form>
-  </class>
+<html>
+  <head>
+    <title>Formulaire de contact</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+  </head>
+
+  <body>
+
+    <section class="formStyle">
+      <h1>Envoie nous un petit mot doux !</h1>
+      <form method="POST" action="<?php echo strip_tags($_SERVER['REQUEST_URI']); ?>">
+        <label>Ton nom: </label>
+        <input type="text" name="name" size="30">
+        <br>
+        <label>Ton email <span style="color:#f8a348;">*</span>:</label>
+        <input type="email" name="email" size="30" required>
+        <br>
+        <label>Ton message <span style="color: #f8a348;">*</span>:</label>
+        <textarea name="message" cols="60" rows="10" required></textarea>
+        <br>
+        <input type="submit" name="submit" value="Envoyer">
+      </form>
+    </section>
   </body>
 </html>
