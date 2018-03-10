@@ -1,0 +1,33 @@
+
+#form_container
+{
+	padding:15px 15px;
+	margin-top:15px;
+	background: #EFEFEF;
+	border-radius: 61px;
+	border: 6px solid #303030;
+	padding-bottom: 250px;
+	box-shadow: 10px 10px 10px -20px white;
+}
+h2{
+	color: #f8a348;
+	text-align: center;
+}
+p{
+	text-align: center;
+}
+body
+{
+	background-color: #F8A348;
+	
+	background-size: cover;
+}
+.btn-lg
+{
+	color: #f8a348;
+}
+label
+{
+	color: #f8a348;
+}
+
