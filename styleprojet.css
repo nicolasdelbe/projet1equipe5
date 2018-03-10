@@ -3,8 +3,9 @@ body
   background: orange;
 }
 
-p
+.topcenter
 {
+  position: absolute;
   font-size: 1.2em;
   font-weight: bold;
 }
@@ -16,12 +17,12 @@ p
 
 .giphy-embed
 {
+  position: relative;
   padding-left: 100px;
 }
 
-.container-fluid
+.container
 {
   width: 960px;
-  margin-left: 50px;;
-  margin-right: 0;
+
 }
