@@ -26,3 +26,8 @@ body
   width: 960px;
 
 }
+
+p
+{
+  font-weight: bold;
+}
